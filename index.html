@@ -7,10 +7,19 @@
     <title>Basic Form Validaation</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     </link>
+    <script src="https://rawgithub.com/fabien-d/alertify.js/0.3.10/src/alertify.js"></script>
+    <!-- Alertify Stylesheets And ScriptJS Added -->
+    <!-- <link rel="stylesheet" href="/alertify.js-0.3.9/alertify.js-0.3.9/themes/alertify.bootstrap.css"> -->
+    <!-- <link rel="stylesheet" href="/alertify.js-0.3.9/alertify.js-0.3.9/themes/alertify.default.css"> -->
+    <link rel="stylesheet" href="/alertify.js-0.3.9/alertify.js-0.3.9/themes/alertify.core.css">
+
     <script defer src="script.js"></script>
+    <script defer src="alertify.js-0.3.9/alertify.js-0.3.9/lib/alertify.min.js"></script>
+    <script defer src="alertify.js-0.3.9/alertify.js-0.3.9/src/alertify.js"></script>
 </head>
 
 <body>
+    <!-- <a href="#" >first popup</a> -->
     <section class="container">
         <form>
             <h1>User Details</h1>
@@ -37,7 +46,7 @@
                 <p class="password2-msg msg">error message</p>
             </div>
             <br>
-            <input type="submit" value="Submit" class="submit" />
+            <input type="submit" id="alert1" value="Submit" class="submit" />
 
         </form>
     </section>

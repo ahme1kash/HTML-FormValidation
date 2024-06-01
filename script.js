@@ -17,8 +17,10 @@ submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
     if (username.value === "" && email.value === "" && password1.value === "" && password2.value === "") {
-        alert("Please fill all input fields");
-        return;
+        // alert("Please fill all input fields");
+        alertify.alert("Please fill all input fields", function () { }, 'popup1');
+        console.log(username.value, email.value, password1.value, password2.value)
+
     }
     if (username.value === "") {
         showMessage(usernameMessage, "Please Provide Your Name", "#FF0000");
@@ -28,7 +30,7 @@ submitBtn.addEventListener("click", (e) => {
     if (email.value === "") {
         showMessage(emailMessage, "Please Provide Your Email", "#FF0000");
     } else {
-        showMessage(emailMessage, "Valid Email", '#05009E');
+        showMessage(emailMessage, "Email Added", '#05009E');
     }
     if (password1.value === "") {
         showMessage(passwordMessage1, "Please Provide Your Password", "#FF0000");
