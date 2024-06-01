@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Validaation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </link>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <form>
+            <h1>User Details</h1>
+            <br>
+            <div class="input-container">
+                <label for="username">Name</label>
+                <input type="text" class="username" placeholder="Name" id="username" />
+                <p class="user-msg msg">error message</p>
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" class="email" placeholder="Email" id="email" />
+                <p class="email-msg msg">error message</p>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" class="password" placeholder="Password" id="password" />
+                <p class="password-msg msg">error message</p>
+            </div>
+            <div class="input-container">
+                <label for="password2">Confirm Password</label>
+                <input type="password" class="password2" placeholder="Confirm Password" autocomplete="off"
+                    id="password2" />
+                <p class="password2-msg msg">error message</p>
+            </div>
+            <br>
+            <input type="submit" value="Submit" class="submit" />
+
+        </form>
+    </section>
+</body>
+
+</html>
